@@ -1,0 +1,27 @@
+.item-card {
+    margin-bottom: 5px;
+}
+
+h4 {
+    font-weight: 100;
+}
+
+.item-card__title--done {
+    text-decoration: line-through;
+}
+
+.item-card__title--in-progress {
+    font-weight: bolder;
+}
+
+.item-card__status--done {
+    color: green;
+}
+
+.item-card__status--in-progress {
+    color: blue;
+}
+
+.item-card__status--pending {
+    color: grey;
+}
