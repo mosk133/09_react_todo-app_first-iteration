@@ -1,4 +1,3 @@
-import './App.css'
 import { Header } from './components/Header'
 import { HeaderWrapper } from './components/HeaderWrapper'
 import { ItemsList } from './components/ItemsList'
