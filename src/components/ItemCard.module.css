@@ -56,24 +56,19 @@
   width: 100%;
   text-align: center;
   padding: 8px 12px;
-  font-size: 0.9rem;
-  font-weight: bold;
   border-radius: 6px;
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .item-card__status--done {
   background-color: #017501;
-  color: #fff;
 }
 
 .item-card__status--in-progress {
-  background-color: #006FFE;
-  color: #fff;
+  background-color: #006ffe;
 }
 
 .item-card__status--pending {
   background-color: gray;
-  color: #fff;
 }
