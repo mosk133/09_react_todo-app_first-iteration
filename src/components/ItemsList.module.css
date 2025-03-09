@@ -1,0 +1,9 @@
+.items-list__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 30px;
+  box-sizing: border-box;
+  align-items: stretch;
+  margin-top: 120px;
+}
