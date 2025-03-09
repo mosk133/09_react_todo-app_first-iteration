@@ -1,69 +1,69 @@
 import './App.css'
 import { Header } from './components/Header'
-import { ItemCard } from './components/ItemCard'
+import { ItemsList } from './components/ItemsList'
 import { ListHeader } from './components/ListHeader'
 import { Subheader } from './components/Subheader'
 
-const items = [
-  { 
-    uuid: "7a5c8b5d-8d2f-4b3b-a6d7-1eec7f8b9b5e", 
-    title: "Buy bread", 
-    description: "Go to the bakery", 
-    status: "done" 
+const tasks = [
+  {
+    "title": "Buy groceries",
+    "description": "Purchase milk, eggs, and bread from the supermarket.",
+    "uuid": "a1b2c3d4-e5f6-7g8h-9i0j-k1l2m3n4o5p6",
+    "status": "pending"
   },
-  { 
-    uuid: "2f3e4d5a-6b7c-8d9e-0f1a-2b3c4d5e6f7g", 
-    title: "Exercise", 
-    description: "Run for 30 minutes", 
-    status: "in-progress" 
+  {
+    "title": "Finish project report",
+    "description": "Complete the final draft of the quarterly report.",
+    "uuid": "b2c3d4e5-f6g7-h8i9-0j1k-2l3m4n5o6p7",
+    "status": "in progress"
   },
-  { 
-    uuid: "4b6d8f9a-0c2e-3d5f-7b1a-8c9e0d2f3g4h", 
-    title: "Read a book", 
-    description: "Read 10 pages", 
-    status: "pending" 
+  {
+    "title": "Call plumber",
+    "description": "Fix the leaking sink in the kitchen.",
+    "uuid": "c3d4e5f6-g7h8-i9j0-1k2l-3m4n5o6p7q8",
+    "status": "pending"
   },
-  { 
-    uuid: "5c7e9a0b-2d4f-6g8h-1j3k-5l7m9n0o2p3q", 
-    title: "Write a journal", 
-    description: "Write about today's experience", 
-    status: "in-progress" 
+  {
+    "title": "Schedule dentist appointment",
+    "description": "Book a check-up for next week.",
+    "uuid": "d4e5f6g7-h8i9-j0k1-2l3m-4n5o6p7q8r9",
+    "status": "done"
   },
-  { 
-    uuid: "6d8f0a2b-4c5e-7g9h-1j3k-5l7m9n0o2p3q", 
-    title: "Grocery shopping", 
-    description: "Buy fruits and vegetables", 
-    status: "pending" 
+  {
+    "title": "Workout",
+    "description": "Go to the gym for an hour of cardio and strength training.",
+    "uuid": "e5f6g7h8-i9j0-k1l2-3m4n-5o6p7q8r9s0",
+    "status": "in progress"
   },
-  { 
-    uuid: "7e9a0b2c-4d5f-6g8h-1j3k-5l7m9n0o2p3q", 
-    title: "Call mom", 
-    description: "Have a quick chat with her", 
-    status: "done" 
+  {
+    "title": "Pay electricity bill",
+    "description": "Clear this month's electricity bill online.",
+    "uuid": "f6g7h8i9-j0k1-l2m3-4n5o-6p7q8r9s0t1",
+    "status": "pending"
   },
-  { 
-    uuid: "8f0a2b4c-6d5e-7g9h-1j3k-5l7m9n0o2p3q", 
-    title: "Complete project report", 
-    description: "Finish the final draft", 
-    status: "in-progress" 
+  {
+    "title": "Read a book",
+    "description": "Finish reading 'Atomic Habits' by James Clear.",
+    "uuid": "g7h8i9j0-k1l2-m3n4-5o6p-7q8r9s0t1u2",
+    "status": "done"
   },
-  { 
-    uuid: "9a0b2c4d-6e5f-7g8h-1j3k-5l7m9n0o2p3q", 
-    title: "Watch a tutorial", 
-    description: "Learn something new on YouTube", 
-    status: "pending" 
+  {
+    "title": "Plan weekend trip",
+    "description": "Research and book a hotel for the upcoming weekend getaway.",
+    "uuid": "h8i9j0k1-l2m3-n4o5-6p7q-8r9s0t1u2v3",
+    "status": "in progress"
   },
-  { 
-    uuid: "0b2c4d6e-5f7g-8h9a-1j3k-5l7m9n0o2p3q", 
-    title: "Clean the room", 
-    description: "Organize desk and wardrobe", 
-    status: "done" 
+  {
+    "title": "Car maintenance",
+    "description": "Get an oil change and tire rotation.",
+    "uuid": "i9j0k1l2-m3n4-o5p6-7q8r-9s0t1u2v3w4",
+    "status": "pending"
   },
-  { 
-    uuid: "1c3d5e7f-9g0a-2b4h-6j8k-5l7m9n0o2p3q", 
-    title: "Meditate", 
-    description: "10 minutes of mindfulness", 
-    status: "in-progress" 
+  {
+    "title": "Prepare presentation",
+    "description": "Create slides for Monday's meeting.",
+    "uuid": "j0k1l2m3-n4o5-p6q7-8r9s-0t1u2v3w4x5",
+    "status": "done"
   }
 ];
 
@@ -74,9 +74,7 @@ function App() {
       <Header/>
       <Subheader subtitle="Todo List Manager"/>
       <ListHeader content="Todo List"/>
-      {items.map((item, index) => (
-        <ItemCard key={index} item={item} />
-      ))}
+      <ItemsList itemsList={tasks}/>
     </>
   )
 }
