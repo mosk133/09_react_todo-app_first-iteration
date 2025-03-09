@@ -1,6 +1,6 @@
 import './App.css'
 import { Header } from './components/Header'
-import { HeaderContainer } from './components/HeaderContainer'
+import { HeaderWrapper } from './components/HeaderWrapper'
 import { ItemsList } from './components/ItemsList'
 import { ListContainer } from './components/ListContainer'
 import { ListHeader } from './components/ListHeader'
@@ -73,10 +73,10 @@ function App() {
 
   return (
     <>
-      <HeaderContainer>
+      <HeaderWrapper>
         <Header />
         <Subheader subtitle="Todo List Manager" />
-      </HeaderContainer>
+      </HeaderWrapper>
 
       <ListContainer>
         <ListHeader content="Todo List" />

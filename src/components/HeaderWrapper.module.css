@@ -1,4 +1,4 @@
-.header-container {
+.header__wrapper {
   position: fixed;
   top: 0;
   width: 100%;
@@ -9,7 +9,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  .header-container {
+  .header__wrapper {
     background-color: #f0f0f0;
     color: black;
   }

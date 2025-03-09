@@ -1,4 +1,4 @@
-.list-header-container {
+.list-header {
   position: fixed;
   text-align: center;
   width: 100%;
@@ -8,7 +8,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  .list-header-container {
+  .list-header {
     background-color: #f0f0f0;
     color: black;
   }
