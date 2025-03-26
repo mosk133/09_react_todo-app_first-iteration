@@ -1,14 +1,15 @@
-.list__header {
+.header {
   position: fixed;
-  text-align: center;
+  top: 0;
   width: 100%;
+  z-index: 1000;
+  text-align: center;
   background-color: #1f1f1f;
-  padding-bottom: 18px;
-  margin-top: 87px;
+  padding-top: 12px;
 }
 
 @media (prefers-color-scheme: light) {
-  .list__header {
+  .header{
     background-color: #f0f0f0;
     color: black;
   }

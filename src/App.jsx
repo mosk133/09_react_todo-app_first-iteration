@@ -72,11 +72,8 @@ function App() {
 
   return (
     <>
-      <HeaderWrapper>
-        <Header />
-        <Subheader subtitle="Todo List Manager" />
-      </HeaderWrapper>
-
+      <Header />
+      <Subheader subtitle="Todo List Manager" />
       <ListContainer>
         <ListHeader content="Todo List" />
         <ItemsList itemsList={tasks} />
