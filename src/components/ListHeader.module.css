@@ -1,0 +1,15 @@
+.list__header {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  background-color: #1f1f1f;
+  padding-bottom: 18px;
+  margin-top: 87px;
+}
+
+@media (prefers-color-scheme: light) {
+  .list__header {
+    background-color: #f0f0f0;
+    color: black;
+  }
+}
