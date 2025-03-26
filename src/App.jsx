@@ -1,5 +1,4 @@
 import { Header } from './components/Header'
-import { HeaderWrapper } from './components/HeaderWrapper'
 import { ItemsList } from './components/ItemsList'
 import { ListContainer } from './components/ListContainer'
 import { ListHeader } from './components/ListHeader'
